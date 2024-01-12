@@ -9,7 +9,9 @@ namespace SignalRApi.Mapping
         public SliderMapping()
         {
             CreateMap<Slider, ResultSliderDto>().ReverseMap();
+            CreateMap<Slider, CreateSliderDto>().ReverseMap();
+            CreateMap<Slider, UpdateSliderDto>().ReverseMap();
 
-        }
+		}
     }
 }
